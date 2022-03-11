@@ -18,6 +18,7 @@
 		EEC9DC9D27DB868B00AF9C3F /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */; };
 		EEC9DC9F27DB86C400AF9C3F /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */; };
 		EEC9DCA127DB87D200AF9C3F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */; };
+		EEC9DCA527DBC25300AF9C3F /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCA427DBC25300AF9C3F /* RowItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
 		EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		EEC9DCA427DBC25300AF9C3F /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		EEC9DC6A27DB803B00AF9C3F /* NextFlix-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EEC9DCA327DBC23100AF9C3F /* Components */,
 				EEC9DCA227DBA2D400AF9C3F /* Features */,
 				EEC9DC6B27DB803B00AF9C3F /* NextFlix_SwiftApp.swift */,
 				EEC9DC6F27DB804000AF9C3F /* Assets.xcassets */,
@@ -145,6 +148,14 @@
 				EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		EEC9DCA327DBC23100AF9C3F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EEC9DCA427DBC25300AF9C3F /* RowItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC9DC9D27DB868B00AF9C3F /* FirstTabView.swift in Sources */,
+				EEC9DCA527DBC25300AF9C3F /* RowItem.swift in Sources */,
 				EEC9DC7527DB804000AF9C3F /* Persistence.swift in Sources */,
 				EEC9DCA127DB87D200AF9C3F /* HomeScreen.swift in Sources */,
 				EEC9DC7827DB804000AF9C3F /* NextFlix_Swift.xcdatamodeld in Sources */,
