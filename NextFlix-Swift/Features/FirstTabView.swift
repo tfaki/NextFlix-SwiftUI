@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct FirstTabView: View {
+    let items = (0..<200)
+    
     var body: some View {
-        RowItem()
+        ScrollView {
+            LazyVStack {
+                ForEach(items, id: \.self) { value in
+                    RowItem()
+                }
+            }
+        }
     }
 }
 
