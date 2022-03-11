@@ -11,13 +11,14 @@ struct RowItem: View {
     var body: some View {
         VStack {
                     HStack {
+                        Spacer().frame(width: 16)
                         Image(systemName: "phone.fill")
                             .resizable()
-                            .frame(width: 40.0, height: 80.0)
+                            .frame(width: 50.0, height: 80.0)
                             .padding(10.0)
                             .background(Color.blue)
                             .clipShape(Circle())
-                        Spacer()
+                        Spacer().frame(width: 25)
                         VStack {
                             Text("Hello, First!")
                             Text("Hello, Second!")
