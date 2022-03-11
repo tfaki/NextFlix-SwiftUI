@@ -102,14 +102,12 @@
 		EEC9DC6A27DB803B00AF9C3F /* NextFlix-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EEC9DCA227DBA2D400AF9C3F /* Features */,
 				EEC9DC6B27DB803B00AF9C3F /* NextFlix_SwiftApp.swift */,
 				EEC9DC6F27DB804000AF9C3F /* Assets.xcassets */,
 				EEC9DC7427DB804000AF9C3F /* Persistence.swift */,
 				EEC9DC7627DB804000AF9C3F /* NextFlix_Swift.xcdatamodeld */,
 				EEC9DC7127DB804000AF9C3F /* Preview Content */,
-				EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */,
-				EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */,
-				EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */,
 			);
 			path = "NextFlix-Swift";
 			sourceTree = "<group>";
@@ -137,6 +135,16 @@
 				EEC9DC8D27DB804000AF9C3F /* NextFlix_SwiftUITestsLaunchTests.swift */,
 			);
 			path = "NextFlix-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		EEC9DCA227DBA2D400AF9C3F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */,
+				EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */,
+				EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
