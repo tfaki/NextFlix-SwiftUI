@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EEC9DC6C27DB803B00AF9C3F /* NextFlix_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC6B27DB803B00AF9C3F /* NextFlix_SwiftApp.swift */; };
-		EEC9DC6E27DB803B00AF9C3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC6D27DB803B00AF9C3F /* ContentView.swift */; };
 		EEC9DC7027DB804000AF9C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC9DC6F27DB804000AF9C3F /* Assets.xcassets */; };
 		EEC9DC7327DB804000AF9C3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC9DC7227DB804000AF9C3F /* Preview Assets.xcassets */; };
 		EEC9DC7527DB804000AF9C3F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC7427DB804000AF9C3F /* Persistence.swift */; };
@@ -16,6 +15,9 @@
 		EEC9DC8227DB804000AF9C3F /* NextFlix_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC8127DB804000AF9C3F /* NextFlix_SwiftTests.swift */; };
 		EEC9DC8C27DB804000AF9C3F /* NextFlix_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC8B27DB804000AF9C3F /* NextFlix_SwiftUITests.swift */; };
 		EEC9DC8E27DB804000AF9C3F /* NextFlix_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC8D27DB804000AF9C3F /* NextFlix_SwiftUITestsLaunchTests.swift */; };
+		EEC9DC9D27DB868B00AF9C3F /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */; };
+		EEC9DC9F27DB86C400AF9C3F /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */; };
+		EEC9DCA127DB87D200AF9C3F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		EEC9DC6827DB803B00AF9C3F /* NextFlix-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NextFlix-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC9DC6B27DB803B00AF9C3F /* NextFlix_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextFlix_SwiftApp.swift; sourceTree = "<group>"; };
-		EEC9DC6D27DB803B00AF9C3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEC9DC6F27DB804000AF9C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC9DC7227DB804000AF9C3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEC9DC7427DB804000AF9C3F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		EEC9DC8727DB804000AF9C3F /* NextFlix-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NextFlix-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC9DC8B27DB804000AF9C3F /* NextFlix_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextFlix_SwiftUITests.swift; sourceTree = "<group>"; };
 		EEC9DC8D27DB804000AF9C3F /* NextFlix_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextFlix_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				EEC9DC6B27DB803B00AF9C3F /* NextFlix_SwiftApp.swift */,
-				EEC9DC6D27DB803B00AF9C3F /* ContentView.swift */,
 				EEC9DC6F27DB804000AF9C3F /* Assets.xcassets */,
 				EEC9DC7427DB804000AF9C3F /* Persistence.swift */,
 				EEC9DC7627DB804000AF9C3F /* NextFlix_Swift.xcdatamodeld */,
 				EEC9DC7127DB804000AF9C3F /* Preview Content */,
+				EEC9DC9C27DB868B00AF9C3F /* FirstTabView.swift */,
+				EEC9DC9E27DB86C400AF9C3F /* SecondTabView.swift */,
+				EEC9DCA027DB87D200AF9C3F /* HomeScreen.swift */,
 			);
 			path = "NextFlix-Swift";
 			sourceTree = "<group>";
@@ -263,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC9DC9D27DB868B00AF9C3F /* FirstTabView.swift in Sources */,
 				EEC9DC7527DB804000AF9C3F /* Persistence.swift in Sources */,
+				EEC9DCA127DB87D200AF9C3F /* HomeScreen.swift in Sources */,
 				EEC9DC7827DB804000AF9C3F /* NextFlix_Swift.xcdatamodeld in Sources */,
-				EEC9DC6E27DB803B00AF9C3F /* ContentView.swift in Sources */,
+				EEC9DC9F27DB86C400AF9C3F /* SecondTabView.swift in Sources */,
 				EEC9DC6C27DB803B00AF9C3F /* NextFlix_SwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
