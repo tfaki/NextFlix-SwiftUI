@@ -7,8 +7,8 @@
 
 /* URL REGION */
 let NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing"
-let POPULAR_URL = ""
-let UPCOMING_URL = ""
+let POPULAR_URL = "https://api.themoviedb.org/3/movie/popular"
+let UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming"
 let BASE_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 /* ENDREGION */
 
