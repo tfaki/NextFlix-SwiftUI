@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct UpcomingView: View {
+    
+    @ObservedObject var viewModel = UpcomingViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.upcomingResponse, id: \.self) { movie in
+                    RowItem(movie: movie)
+                }
+            }
+        }
     }
 }
 
