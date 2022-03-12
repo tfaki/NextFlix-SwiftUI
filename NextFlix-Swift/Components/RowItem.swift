@@ -13,12 +13,13 @@ struct RowItem: View {
         VStack {
             HStack {
                 Spacer().frame(width: 16)
-                Image("https://image.tmdb.org/t/p/w500" + nowPlaying.poster_path)
-                    .resizable()
-                    .frame(width: 50.0, height: 80.0)
-                    .padding(10.0)
-                    .background(Color.blue)
-                    .clipShape(Circle())
+                VStack {
+                    AsyncImage(url: URL(string: nowPlaying.posterUrl))
+                }
+                .frame(width: 50.0, height: 80.0)
+                .padding(10.0)
+                .background(Color.blue)
+                .clipShape(Circle())
                 Spacer().frame(width: 25)
                 VStack {
                     Text(nowPlaying.title)
@@ -37,11 +38,11 @@ struct RowItem: View {
 
 struct RowItem_Previews: PreviewProvider {
     static let nowPlaying = NowPlaying(
-            id: 1,
-            title: "Pereira",
-            overview: "createwithswift.com",
-            poster_path: "@tiagogogo"
-        )
+        id: 1,
+        title: "Pereira",
+        overview: "createwithswift.com",
+        poster_path: "@tiagogogo"
+    )
     static var previews: some View {
         RowItem(nowPlaying: nowPlaying)
     }
