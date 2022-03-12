@@ -10,7 +10,7 @@ import Combine
 
 class NowPlayingViewModel: ObservableObject {
     
-    @Published var nowPlayingResponse = [NowPlaying]()
+    @Published var nowPlayingResponse = [Movie]()
     @Published var chatListLoadingError: String = ""
     @Published var showAlert: Bool = false
     

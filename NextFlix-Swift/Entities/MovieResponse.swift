@@ -6,11 +6,11 @@
 //
 import Foundation
 
-struct NowPlayingResponse: Codable {
-    let results: [NowPlaying]
+struct MovieResponse: Codable {
+    let results: [Movie]
 }
 
-struct NowPlaying: Codable, Hashable {
+struct Movie: Codable, Hashable {
     let id: Int
     let title: String
     let overview: String

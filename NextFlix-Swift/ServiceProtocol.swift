@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 protocol ServiceProtocol {
-    func fetchNowPlaying() -> AnyPublisher<DataResponse<NowPlayingResponse, NetworkError>, Never>
+    func fetchNowPlaying() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never>
 }
 
 class Service {
@@ -20,7 +20,7 @@ class Service {
 
 extension Service: ServiceProtocol {
     
-    func fetchNowPlaying() -> AnyPublisher<DataResponse<NowPlayingResponse, NetworkError>, Never> {
+    func fetchNowPlaying() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never> {
         let url = URL(string: NOW_PLAYING_URL)!
         let parameters: Parameters = [
                 API_KEY_NAME: API_KEY
@@ -30,7 +30,7 @@ extension Service: ServiceProtocol {
                           method: .get,
                           parameters: parameters)
             .validate()
-            .publishDecodable(type: NowPlayingResponse.self)
+            .publishDecodable(type: MovieResponse.self)
             .map { response in
                 response.mapError { error in
                     let backendError = response.data.flatMap { try? JSONDecoder().decode(BackendError.self, from: $0)}

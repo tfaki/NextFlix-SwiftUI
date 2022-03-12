@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RowItem: View {
-    var nowPlaying: NowPlaying
+    var nowPlaying: Movie
     var body: some View {
         VStack {
             HStack {
@@ -42,7 +42,7 @@ struct RowItem: View {
 }
 
 struct RowItem_Previews: PreviewProvider {
-    static let nowPlaying = NowPlaying(
+    static let nowPlaying = Movie(
         id: 1,
         title: "Pereira",
         overview: "createwithswift.com",
