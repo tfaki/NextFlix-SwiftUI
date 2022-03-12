@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct PopularView: View {
+    @ObservedObject var viewModel = PopularViewModel()
+    
     var body: some View {
-        Text("Hello, World from Second Tab!")
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.popularResponse, id: \.self) { movie in
+                    RowItem(movie: movie)
+                }
+            }
+        }
     }
 }
 

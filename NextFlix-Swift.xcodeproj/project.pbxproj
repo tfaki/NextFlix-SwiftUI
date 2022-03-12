@@ -28,6 +28,7 @@
 		EEC9DCB027DCCE8600AF9C3F /* NowPlayingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCAF27DCCE8600AF9C3F /* NowPlayingViewModel.swift */; };
 		EEC9DCB527DCE72B00AF9C3F /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCB427DCE72B00AF9C3F /* UpcomingView.swift */; };
 		EEC9DCBB27DCE7C100AF9C3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCBA27DCE7C100AF9C3F /* Constants.swift */; };
+		EEC9DCBD27DCEDF800AF9C3F /* PopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9DCBC27DCEDF800AF9C3F /* PopularViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EEC9DCAF27DCCE8600AF9C3F /* NowPlayingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewModel.swift; sourceTree = "<group>"; };
 		EEC9DCB427DCE72B00AF9C3F /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		EEC9DCBA27DCE7C100AF9C3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEC9DCBC27DCEDF800AF9C3F /* PopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewModel.swift; sourceTree = "<group>"; };
 		EF3012B53D40E34C2EC43920 /* Pods-NextFlix-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextFlix-Swift.release.xcconfig"; path = "Target Support Files/Pods-NextFlix-Swift/Pods-NextFlix-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		F19EFD24A5AD18520F3492E3 /* Pods-NextFlix-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextFlix-SwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-NextFlix-SwiftTests/Pods-NextFlix-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F79139059355B395C17D97A1 /* Pods-NextFlix-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextFlix-Swift.debug.xcconfig"; path = "Target Support Files/Pods-NextFlix-Swift/Pods-NextFlix-Swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC9DC9E27DB86C400AF9C3F /* PopularView.swift */,
+				EEC9DCBC27DCEDF800AF9C3F /* PopularViewModel.swift */,
 			);
 			path = Popular;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC9DCBD27DCEDF800AF9C3F /* PopularViewModel.swift in Sources */,
 				EEC9DC9D27DB868B00AF9C3F /* NowPlayingView.swift in Sources */,
 				EEC9DCB027DCCE8600AF9C3F /* NowPlayingViewModel.swift in Sources */,
 				EEC9DCB527DCE72B00AF9C3F /* UpcomingView.swift in Sources */,

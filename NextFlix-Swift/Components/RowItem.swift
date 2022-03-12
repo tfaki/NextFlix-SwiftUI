@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RowItem: View {
-    var nowPlaying: Movie
+    var movie: Movie
     var body: some View {
         VStack {
             HStack {
-                AsyncImage(url: URL(string: nowPlaying.posterUrl)) { image in
+                AsyncImage(url: URL(string: movie.posterUrl)) { image in
                     image
                         .resizable()
                         .frame(width: 80, height: 100)
@@ -27,9 +27,9 @@ struct RowItem: View {
                 }
                 Spacer().frame(width: 25)
                 VStack {
-                    Text(nowPlaying.title)
+                    Text(movie.title)
                         .font(.system(size: 16, weight: .heavy, design: .default))
-                    Text(nowPlaying.overview)
+                    Text(movie.overview)
                         .lineLimit(2)
                 }
                 Spacer()
@@ -49,6 +49,6 @@ struct RowItem_Previews: PreviewProvider {
         poster_path: "@tiagogogo"
     )
     static var previews: some View {
-        RowItem(nowPlaying: nowPlaying)
+        RowItem(movie: nowPlaying)
     }
 }

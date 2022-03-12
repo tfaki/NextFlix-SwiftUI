@@ -14,7 +14,7 @@ struct NowPlayingView: View {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.nowPlayingResponse, id: \.self) { movie in
-                    RowItem(nowPlaying: movie)
+                    RowItem(movie: movie)
                 }
             }
         }
