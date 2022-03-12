@@ -12,14 +12,19 @@ struct RowItem: View {
     var body: some View {
         VStack {
             HStack {
-                Spacer().frame(width: 16)
-                VStack {
-                    AsyncImage(url: URL(string: nowPlaying.posterUrl))
+                AsyncImage(url: URL(string: nowPlaying.posterUrl)) { image in
+                    image
+                        .resizable()
+                        .frame(width: 80, height: 100)
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .padding(8)
+                        
+                } placeholder: {
+                    Image(systemName: "photo")
+                        .imageScale(.large)
+                        .foregroundColor(.gray)
                 }
-                .frame(width: 50.0, height: 80.0)
-                .padding(10.0)
-                .background(Color.blue)
-                .clipShape(Circle())
                 Spacer().frame(width: 25)
                 VStack {
                     Text(nowPlaying.title)
