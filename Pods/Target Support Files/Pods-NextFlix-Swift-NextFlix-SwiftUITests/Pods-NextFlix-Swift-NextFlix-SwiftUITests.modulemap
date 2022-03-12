@@ -1,0 +1,6 @@
+framework module Pods_NextFlix_Swift_NextFlix_SwiftUITests {
+  umbrella header "Pods-NextFlix-Swift-NextFlix-SwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

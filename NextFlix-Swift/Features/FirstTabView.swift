@@ -9,12 +9,13 @@ import SwiftUI
 
 struct FirstTabView: View {
     let items = (0..<200)
+    @ObservedObject var viewModel = NowPlayingViewModel()
     
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(items, id: \.self) { value in
-                    RowItem()
+                ForEach(viewModel.nowPlayingResponse, id: \.self) { movie in
+                    RowItem(nowPlaying: movie)
                 }
             }
         }

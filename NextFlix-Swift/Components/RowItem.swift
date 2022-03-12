@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct RowItem: View {
+    var nowPlaying: NowPlaying
     var body: some View {
         VStack {
             HStack {
                 Spacer().frame(width: 16)
-                Image(systemName: "phone.fill")
+                Image("https://image.tmdb.org/t/p/w500" + nowPlaying.poster_path)
                     .resizable()
                     .frame(width: 50.0, height: 80.0)
                     .padding(10.0)
@@ -20,8 +21,10 @@ struct RowItem: View {
                     .clipShape(Circle())
                 Spacer().frame(width: 25)
                 VStack {
-                    Text("Hello, First!")
-                    Text("Hello, Second!")
+                    Text(nowPlaying.title)
+                        .font(.system(size: 16, weight: .heavy, design: .default))
+                    Text(nowPlaying.overview)
+                        .lineLimit(2)
                 }
                 Spacer()
             }
@@ -33,7 +36,13 @@ struct RowItem: View {
 }
 
 struct RowItem_Previews: PreviewProvider {
+    static let nowPlaying = NowPlaying(
+            id: 1,
+            title: "Pereira",
+            overview: "createwithswift.com",
+            poster_path: "@tiagogogo"
+        )
     static var previews: some View {
-        RowItem()
+        RowItem(nowPlaying: nowPlaying)
     }
 }
