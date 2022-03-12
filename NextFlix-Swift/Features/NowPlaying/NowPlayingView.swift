@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct FirstTabView: View {
-    let items = (0..<200)
+struct NowPlayingView: View {
     @ObservedObject var viewModel = NowPlayingViewModel()
     
     var body: some View {
@@ -24,6 +23,6 @@ struct FirstTabView: View {
 
 struct FirstTabView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstTabView()
+        NowPlayingView()
     }
 }

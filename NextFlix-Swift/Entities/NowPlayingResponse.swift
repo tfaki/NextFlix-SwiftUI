@@ -16,6 +16,6 @@ struct NowPlaying: Codable, Hashable {
     let overview: String
     let poster_path: String
     var posterUrl: String {
-            return "https://image.tmdb.org/t/p/w500" + poster_path 
+        return BASE_IMAGE_URL + poster_path
         }
 }

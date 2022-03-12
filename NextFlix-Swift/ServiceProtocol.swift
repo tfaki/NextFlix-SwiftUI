@@ -21,9 +21,9 @@ class Service {
 extension Service: ServiceProtocol {
     
     func fetchNowPlaying() -> AnyPublisher<DataResponse<NowPlayingResponse, NetworkError>, Never> {
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing")!
+        let url = URL(string: NOW_PLAYING_URL)!
         let parameters: Parameters = [
-                "api_key": "b2dc5760d7e382f4227fb93d48c7eca8"
+                API_KEY_NAME: API_KEY
                 ]
         
         return AF.request(url,

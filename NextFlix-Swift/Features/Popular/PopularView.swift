@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SecondTabView: View {
+struct PopularView: View {
     var body: some View {
         Text("Hello, World from Second Tab!")
     }
@@ -15,6 +15,6 @@ struct SecondTabView: View {
 
 struct SecondTabView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondTabView()
+        PopularView()
     }
 }
