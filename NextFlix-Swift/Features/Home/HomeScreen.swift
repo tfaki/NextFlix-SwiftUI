@@ -10,16 +10,21 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         TabView {
-           NowPlayingView()
-             .tabItem {
-                Image(systemName: "phone.fill")
-                Text("First Tab")
-           }
-           PopularView()
-             .tabItem {
-                Image(systemName: "tv.fill")
-                Text("Second Tab")
-          }
+            NowPlayingView()
+                .tabItem {
+                    Image(systemName: "tv.fill")
+                    Text("Now Playing")
+                }
+            PopularView()
+                .tabItem {
+                    Image(systemName: "chart.line.uptrend.xyaxis.circle.fill")
+                    Text("Popular")
+                }
+            UpcomingView()
+                .tabItem {
+                    Image(systemName: "stopwatch.fill")
+                    Text("Upcoming")
+                }
         }
     }
 }
