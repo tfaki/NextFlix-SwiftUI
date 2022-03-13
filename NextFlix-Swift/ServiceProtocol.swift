@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 protocol ServiceProtocol {
-    func fetchNowPlaying() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never>
+    func fetchNowPlaying(page: Int) -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never>
     func fetchPopular() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never>
     func fetchUpcoming() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never>
 }
@@ -22,10 +22,11 @@ class Service {
 
 extension Service: ServiceProtocol {
     
-    func fetchNowPlaying() -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never> {
+    func fetchNowPlaying(page: Int) -> AnyPublisher<DataResponse<MovieResponse, NetworkError>, Never> {
         let url = URL(string: NOW_PLAYING_URL)!
         let parameters: Parameters = [
-                API_KEY_NAME: API_KEY
+                API_KEY_NAME: API_KEY,
+                "page": page
                 ]
         
         return AF.request(url,

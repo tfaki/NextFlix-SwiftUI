@@ -19,11 +19,11 @@ class NowPlayingViewModel: ObservableObject {
     
     init( dataManager: ServiceProtocol = Service.shared) {
         self.dataManager = dataManager
-        getNowPlaying()
+        getNowPlaying(page: 1)
     }
     
-    func getNowPlaying() {
-        dataManager.fetchNowPlaying()
+    func getNowPlaying(page: Int) {
+        dataManager.fetchNowPlaying(page: page)
             .sink { (dataResponse) in
                 if dataResponse.error != nil {
                     self.createAlert(with: dataResponse.error!)

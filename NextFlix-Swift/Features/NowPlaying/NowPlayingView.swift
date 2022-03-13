@@ -16,6 +16,9 @@ struct NowPlayingView: View {
         }
         .frame( maxWidth: .infinity)
         .listStyle(PlainListStyle())
+        .refreshable {
+            viewModel.getNowPlaying(page: 2)
+        }
     }
 }
 
