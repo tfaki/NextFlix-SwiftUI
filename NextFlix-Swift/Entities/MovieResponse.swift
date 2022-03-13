@@ -10,7 +10,7 @@ struct MovieResponse: Codable {
     let results: [Movie]
 }
 
-struct Movie: Codable, Hashable {
+struct Movie: Codable, Hashable, Identifiable {
     let id: Int
     let title: String
     let overview: String

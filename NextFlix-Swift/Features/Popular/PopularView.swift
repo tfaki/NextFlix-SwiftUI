@@ -11,13 +11,11 @@ struct PopularView: View {
     @ObservedObject var viewModel = PopularViewModel()
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(viewModel.popularResponse, id: \.self) { movie in
-                    RowItem(movie: movie)
-                }
-            }
+        List(viewModel.popularResponse) { movie in
+            RowItem(movie: movie)
         }
+        .frame( maxWidth: .infinity)
+        .listStyle(PlainListStyle())
     }
 }
 

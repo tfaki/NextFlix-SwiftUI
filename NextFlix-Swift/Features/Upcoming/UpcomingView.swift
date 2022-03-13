@@ -12,13 +12,11 @@ struct UpcomingView: View {
     @ObservedObject var viewModel = UpcomingViewModel()
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(viewModel.upcomingResponse, id: \.self) { movie in
-                    RowItem(movie: movie)
-                }
-            }
+        List(viewModel.upcomingResponse) { movie in
+            RowItem(movie: movie)
         }
+        .frame( maxWidth: .infinity)
+        .listStyle(PlainListStyle())
     }
 }
 

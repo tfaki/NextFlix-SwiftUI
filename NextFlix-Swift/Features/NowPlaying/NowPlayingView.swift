@@ -11,13 +11,11 @@ struct NowPlayingView: View {
     @ObservedObject var viewModel = NowPlayingViewModel()
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(viewModel.nowPlayingResponse, id: \.self) { movie in
-                    RowItem(movie: movie)
-                }
-            }
+        List(viewModel.nowPlayingResponse) { movie in
+            RowItem(movie: movie)
         }
+        .frame( maxWidth: .infinity)
+        .listStyle(PlainListStyle())
     }
 }
 
