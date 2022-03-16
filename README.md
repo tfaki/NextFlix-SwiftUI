@@ -9,9 +9,9 @@ This is a PoC that show use of swiftUI in Swift.
 ## Screenshots
 
 <p>
- <img align="center" src="nowplaying.PNG" width="300" height="550"/>
- <img align="center" src="popular.PNG" width="300" height="550"/>
- <img align="center" src="upcoming.PNG" width="300" height="550"/>
+ <img align="center" src="nowplaying.PNG" width="250" height="550"/>
+ <img align="center" src="popular.PNG" width="250" height="550"/>
+ <img align="center" src="upcoming.PNG" width="250" height="550"/>
 </p>
 
 ## Tech Stack
